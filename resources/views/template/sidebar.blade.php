@@ -72,7 +72,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="{{ asset('admin.pasien') }}" class="nav-link">
+                <a href="{{ asset('admin.hasil') }}" class="nav-link {{ Request::is('admin.hasil') ?'active' :'' }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>HASIL MCU</p>
                 </a>

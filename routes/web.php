@@ -9,6 +9,10 @@ use App\Http\Controller\PaketController;
 use App\Http\Controller\PasienController;
 
 use App\Http\Controller\FormController;
+
+use App\Http\Controller\HasilController;
+
+use App\Http\Controller\profilController;
 /*
 
 |--------------------------------------------------------------------------
@@ -50,6 +54,10 @@ Route::get('/admin.detailPasien', [App\Http\Controllers\DetailController::class,
 Route::get('/simpandata', [App\Http\Controllers\FormController::class, 'store']);
 
 Route::get('/user.validasi', [App\Http\Controllers\FormController::class, 'validasi']);
+
+Route::get('/admin.hasil', [App\Http\Controllers\HasilController::class, 'index']);
+
+Route::get('/user.profil', [App\Http\Controllers\ProfilController::class, 'index']);
 
 Route::middleware([
     'auth:sanctum',
